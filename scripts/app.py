@@ -491,8 +491,7 @@ else:
 
     def highlight_selected_model(row):
         if str(row["model"]) == model_choice:
-            return ["background-color: #fff3cd"] * len(row)
-
+            return ["background-color: #4a3f00; color: #ffffff; font-weight: 700;"] * len(row)
         return [""] * len(row)
 
     st.dataframe(
